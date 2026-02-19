@@ -1,0 +1,68 @@
+{
+    "power_combos": {
+        "description": "Powerful skill combinations for common workflows",
+        "combos": {
+            "full-stack-development": {
+                "skills": [
+                    "brainstorming",
+                    "writing-plans",
+                    "test-driven-development",
+                    "react-best-practices",
+                    "backend-patterns",
+                    "docker-automation",
+                    "verification-before-completion"
+                ],
+                "benefit": "Complete full-stack feature development",
+                "estimated_time": "4-8 hours",
+                "success_rate": 0.92
+            },
+            "production-ready": {
+                "skills": [
+                    "test-driven-development",
+                    "ui-testing",
+                    "security-review",
+                    "docker-automation",
+                    "verification-before-completion"
+                ],
+                "benefit": "Production-grade quality assurance",
+                "estimated_time": "2-3 hours",
+                "success_rate": 0.95
+            },
+            "bug-fix-master": {
+                "skills": [
+                    "systematic-debugging",
+                    "git-worktrees",
+                    "test-driven-development",
+                    "verification-before-completion"
+                ],
+                "benefit": "Systematic bug resolution",
+                "estimated_time": "30min-2 hours",
+                "success_rate": 0.88
+            },
+            "aws-deployment": {
+                "skills": [
+                    "docker-automation",
+                    "aws-iam",
+                    "aws-cloudformation",
+                    "aws-eks",
+                    "verification-before-completion"
+                ],
+                "benefit": "Complete AWS infrastructure deployment",
+                "estimated_time": "2-4 hours",
+                "success_rate": 0.85
+            },
+            "code-quality-sweep": {
+                "skills": [
+                    "coding-standards",
+                    "test-driven-development",
+                    "security-review",
+                    "requesting-code-review",
+                    "verification-before-completion"
+                ],
+                "benefit": "Comprehensive code quality check",
+                "estimated_time": "1-2 hours",
+                "success_rate": 0.93
+            }
+        }
+    }
+}

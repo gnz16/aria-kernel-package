@@ -1,0 +1,116 @@
+{
+    "skill_dependencies": {
+        "ui-testing": {
+            "works_well_with": [
+                "test-driven-development",
+                "react-best-practices",
+                "systematic-debugging"
+            ],
+            "requires": [],
+            "enhances": [
+                "frontend-patterns",
+                "web-design-guidelines"
+            ],
+            "category": "Testing & Quality"
+        },
+        "test-driven-development": {
+            "works_well_with": [
+                "systematic-debugging",
+                "verification-before-completion",
+                "ui-testing"
+            ],
+            "requires": [],
+            "enhances": [
+                "all"
+            ],
+            "category": "Testing & Quality"
+        },
+        "systematic-debugging": {
+            "works_well_with": [
+                "test-driven-development",
+                "git-worktrees"
+            ],
+            "requires": [],
+            "enhances": [
+                "all"
+            ],
+            "category": "Testing & Quality"
+        },
+        "react-best-practices": {
+            "works_well_with": [
+                "frontend-patterns",
+                "web-design-guidelines",
+                "ui-testing"
+            ],
+            "requires": [],
+            "enhances": [
+                "test-driven-development"
+            ],
+            "category": "Frontend Development"
+        },
+        "docker-automation": {
+            "works_well_with": [
+                "developing-with-docker",
+                "aws-eks",
+                "aws-lambda"
+            ],
+            "requires": [],
+            "enhances": [
+                "aws-cloudformation"
+            ],
+            "category": "Docker & Containers"
+        },
+        "aws-cloudformation": {
+            "works_well_with": [
+                "aws-iam",
+                "aws-s3",
+                "aws-lambda",
+                "docker-automation"
+            ],
+            "requires": [
+                "aws-iam"
+            ],
+            "enhances": [
+                "aws-eks",
+                "aws-ec2"
+            ],
+            "category": "AWS Cloud Services"
+        },
+        "aws-lambda": {
+            "works_well_with": [
+                "aws-iam",
+                "aws-dynamodb",
+                "aws-api-gateway"
+            ],
+            "requires": [
+                "aws-iam"
+            ],
+            "enhances": [
+                "aws-cloudformation"
+            ],
+            "category": "AWS Cloud Services"
+        },
+        "config-builder": {
+            "works_well_with": [
+                "writing-skills",
+                "brainstorming"
+            ],
+            "requires": [],
+            "enhances": [
+                "all"
+            ],
+            "category": "Configuration Management"
+        },
+        "brainstorming": {
+            "works_well_with": [
+                "writing-plans",
+                "executing-plans"
+            ],
+            "requires": [],
+            "enhances": [
+                "test-driven-development"
+            ],
+            "category": "Development Workflow"
+        }
+    }
+}

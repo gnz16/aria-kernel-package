@@ -1,0 +1,59 @@
+---
+name: "AWS Deployment Workflow"
+description: "Deploy application to AWS with infrastructure as code"
+category: "Deployment"
+estimated_time: "1-3 hours"
+skills_used: 6
+token_efficiency: "medium"
+
+steps:
+  - step: 1
+    skill: docker-automation
+    action: "Containerize application"
+    output: "Dockerfile + docker-compose.yml"
+    auto_proceed: true
+    
+  - step: 2
+    skill: aws-iam
+    action: "Set up IAM roles and policies"
+    output: "IAM configuration"
+    auto_proceed: false
+    
+  - step: 3
+    skill: aws-cloudformation
+    action: "Create infrastructure template"
+    output: "CloudFormation template"
+    auto_proceed: false
+    
+  - step: 4
+    skill: aws-s3
+    action: "Configure S3 buckets (if needed)"
+    output: "S3 setup"
+    optional: true
+    auto_proceed: true
+    
+  - step: 5
+    skill: aws-lambda
+    action: "Deploy Lambda functions (if serverless)"
+    output: "Lambda deployment"
+    optional: true
+    auto_proceed: false
+    
+  - step: 6
+    skill: aws-eks
+    action: "Deploy to Kubernetes (if containerized)"
+    output: "EKS deployment"
+    optional: true
+    auto_proceed: false
+
+validation:
+  - "Infrastructure deployed"
+  - "Application accessible"
+  - "Health checks pass"
+  - "Security groups configured"
+  
+deliverables:
+  - "Docker images"
+  - "CloudFormation stack"
+  - "Deployment documentation"
+  - "Rollback procedure"

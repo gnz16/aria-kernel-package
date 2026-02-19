@@ -1,0 +1,43 @@
+---
+name: "Testing Workflow"
+description: "Comprehensive testing from unit to E2E with TDD enforcement"
+category: "Quality Assurance"
+estimated_time: "1-2 hours"
+skills_used: 4
+token_efficiency: "high"
+
+steps:
+  - step: 1
+    skill: test-driven-development
+    action: "Set up TDD workflow"
+    output: "Test framework configured"
+    auto_proceed: true
+    
+  - step: 2
+    skill: test-driven-development
+    action: "Write unit tests"
+    output: "Unit test suite"
+    auto_proceed: false
+    
+  - step: 3
+    skill: ui-testing
+    action: "Create E2E browser tests"
+    output: "E2E test suite"
+    auto_proceed: false
+    
+  - step: 4
+    skill: verification-before-completion
+    action: "Run all tests + coverage report"
+    output: "Test results + coverage"
+    auto_proceed: true
+
+validation:
+  - "All tests pass"
+  - "Coverage >= 80%"
+  - "No flaky tests"
+  - "Test reports generated"
+  
+deliverables:
+  - "Complete test suite"
+  - "Coverage report"
+  - "Test documentation"

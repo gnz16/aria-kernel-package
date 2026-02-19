@@ -1,0 +1,293 @@
+{
+  "generated": "2026-01-20T18:52:51Z",
+  "total_skills": 41,
+  "skills": [
+    {
+      "name": "aws-api-gateway",
+      "description": "last_updated: "2026-01-07"",
+      "category": "AWS Cloud Services",
+      "path": "/Users/apple/.gemini/skills/aws-api-gateway/"
+    }
+,
+    {
+      "name": "aws-bedrock",
+      "description": "last_updated: "2026-01-07"",
+      "category": "AWS Cloud Services",
+      "path": "/Users/apple/.gemini/skills/aws-bedrock/"
+    }
+,
+    {
+      "name": "aws-cloudformation",
+      "description": "last_updated: "2026-01-07"",
+      "category": "AWS Cloud Services",
+      "path": "/Users/apple/.gemini/skills/aws-cloudformation/"
+    }
+,
+    {
+      "name": "aws-dynamodb",
+      "description": "last_updated: "2026-01-07"",
+      "category": "AWS Cloud Services",
+      "path": "/Users/apple/.gemini/skills/aws-dynamodb/"
+    }
+,
+    {
+      "name": "aws-ec2",
+      "description": "last_updated: "2026-01-07"",
+      "category": "AWS Cloud Services",
+      "path": "/Users/apple/.gemini/skills/aws-ec2/"
+    }
+,
+    {
+      "name": "aws-eks",
+      "description": "last_updated: "2026-01-07"",
+      "category": "AWS Cloud Services",
+      "path": "/Users/apple/.gemini/skills/aws-eks/"
+    }
+,
+    {
+      "name": "aws-iam",
+      "description": "last_updated: "2026-01-07"",
+      "category": "AWS Cloud Services",
+      "path": "/Users/apple/.gemini/skills/aws-iam/"
+    }
+,
+    {
+      "name": "aws-lambda",
+      "description": "last_updated: "2026-01-07"",
+      "category": "AWS Cloud Services",
+      "path": "/Users/apple/.gemini/skills/aws-lambda/"
+    }
+,
+    {
+      "name": "aws-s3",
+      "description": "last_updated: "2026-01-07"",
+      "category": "AWS Cloud Services",
+      "path": "/Users/apple/.gemini/skills/aws-s3/"
+    }
+,
+    {
+      "name": "backend-patterns",
+      "description": "---",
+      "category": "Backend Development",
+      "path": "/Users/apple/.gemini/skills/backend-patterns/"
+    }
+,
+    {
+      "name": "brainstorming",
+      "description": "---",
+      "category": "Development Workflow",
+      "path": "/Users/apple/.gemini/skills/brainstorming/"
+    }
+,
+    {
+      "name": "coding-standards",
+      "description": "---",
+      "category": "Code Quality",
+      "path": "/Users/apple/.gemini/skills/coding-standards/"
+    }
+,
+    {
+      "name": "config-builder",
+      "description": "license: MIT",
+      "category": "Configuration Management",
+      "path": "/Users/apple/.gemini/skills/config-builder/"
+    }
+,
+    {
+      "name": "developing-with-docker",
+      "description": "license: MIT",
+      "category": "Docker & Containers",
+      "path": "/Users/apple/.gemini/skills/developing-with-docker/"
+    }
+,
+    {
+      "name": "dispatching-parallel-agents",
+      "description": "---",
+      "category": "Development Workflow",
+      "path": "/Users/apple/.gemini/skills/dispatching-parallel-agents/"
+    }
+,
+    {
+      "name": "docker-automation",
+      "description": "license: MIT",
+      "category": "Docker & Containers",
+      "path": "/Users/apple/.gemini/skills/docker-automation/"
+    }
+,
+    {
+      "name": "executing-plans",
+      "description": "---",
+      "category": "Development Workflow",
+      "path": "/Users/apple/.gemini/skills/executing-plans/"
+    }
+,
+    {
+      "name": "finishing-a-development-branch",
+      "description": "---",
+      "category": "Development Workflow",
+      "path": "/Users/apple/.gemini/skills/finishing-a-development-branch/"
+    }
+,
+    {
+      "name": "frontend-patterns",
+      "description": "---",
+      "category": "Frontend Development",
+      "path": "/Users/apple/.gemini/skills/frontend-patterns/"
+    }
+,
+    {
+      "name": "git-worktrees",
+      "description": "---",
+      "category": "Development Workflow",
+      "path": "/Users/apple/.gemini/skills/git-worktrees/"
+    }
+,
+    {
+      "name": "mcp-builder",
+      "description": "license: Complete terms in LICENSE.txt",
+      "category": "Backend Development",
+      "path": "/Users/apple/.gemini/skills/mcp-builder/"
+    }
+,
+    {
+      "name": "react-best-practices",
+      "description": "license: MIT",
+      "category": "Frontend Development",
+      "path": "/Users/apple/.gemini/skills/react-best-practices/"
+    }
+,
+    {
+      "name": "receiving-code-review",
+      "description": "---",
+      "category": "Development Workflow",
+      "path": "/Users/apple/.gemini/skills/receiving-code-review/"
+    }
+,
+    {
+      "name": "requesting-code-review",
+      "description": "---",
+      "category": "Development Workflow",
+      "path": "/Users/apple/.gemini/skills/requesting-code-review/"
+    }
+,
+    {
+      "name": "security-review",
+      "description": "---",
+      "category": "Testing & Quality",
+      "path": "/Users/apple/.gemini/skills/security-review/"
+    }
+,
+    {
+      "name": "skill-installer",
+      "description": "---",
+      "category": "Other",
+      "path": "/Users/apple/.gemini/skills/skill-installer/"
+    }
+,
+    {
+      "name": "subagent-driven-development",
+      "description": "---",
+      "category": "Development Workflow",
+      "path": "/Users/apple/.gemini/skills/subagent-driven-development/"
+    }
+,
+    {
+      "name": "systematic-debugging",
+      "description": "---",
+      "category": "Testing & Quality",
+      "path": "/Users/apple/.gemini/skills/systematic-debugging/"
+    }
+,
+    {
+      "name": "tdd-workflow",
+      "description": "---",
+      "category": "Development Workflow",
+      "path": "/Users/apple/.gemini/skills/tdd-workflow/"
+    }
+,
+    {
+      "name": "test-driven-development",
+      "description": "---",
+      "category": "Testing & Quality",
+      "path": "/Users/apple/.gemini/skills/test-driven-development/"
+    }
+,
+    {
+      "name": "ui-testing",
+      "description": "license: MIT",
+      "category": "Testing & Quality",
+      "path": "/Users/apple/.gemini/skills/ui-testing/"
+    }
+,
+    {
+      "name": "using-superpowers",
+      "description": "---",
+      "category": "Other",
+      "path": "/Users/apple/.gemini/skills/using-superpowers/"
+    }
+,
+    {
+      "name": "verification-before-completion",
+      "description": "---",
+      "category": "Development Workflow",
+      "path": "/Users/apple/.gemini/skills/verification-before-completion/"
+    }
+,
+    {
+      "name": "web-design-guidelines",
+      "description": "metadata:",
+      "category": "Frontend Development",
+      "path": "/Users/apple/.gemini/skills/web-design-guidelines/"
+    }
+,
+    {
+      "name": "wordpress-router",
+      "description": "compatibility: "Targets WordPress 6.9+ (PHP 7.2.24+). Filesystem-based agent with bash + node. Some workflows require WP-CLI."",
+      "category": "Other",
+      "path": "/Users/apple/.gemini/skills/wordpress-router/"
+    }
+,
+    {
+      "name": "wp-abilities-api",
+      "description": "compatibility: "Targets WordPress 6.9+ (PHP 7.2.24+). Filesystem-based agent with bash + node. Some workflows require WP-CLI."",
+      "category": "Other",
+      "path": "/Users/apple/.gemini/skills/wp-abilities-api/"
+    }
+,
+    {
+      "name": "wp-block-development",
+      "description": "compatibility: "Targets WordPress 6.9+ (PHP 7.2.24+). Filesystem-based agent with bash + node. Some workflows require WP-CLI."",
+      "category": "Other",
+      "path": "/Users/apple/.gemini/skills/wp-block-development/"
+    }
+,
+    {
+      "name": "wp-block-themes",
+      "description": "compatibility: "Targets WordPress 6.9+ (PHP 7.2.24+). Filesystem-based agent with bash + node. Some workflows require WP-CLI."",
+      "category": "Other",
+      "path": "/Users/apple/.gemini/skills/wp-block-themes/"
+    }
+,
+    {
+      "name": "wp-interactivity-api",
+      "description": "compatibility: "Targets WordPress 6.9+ (PHP 7.2.24+). Filesystem-based agent with bash + node. Some workflows require WP-CLI."",
+      "category": "Other",
+      "path": "/Users/apple/.gemini/skills/wp-interactivity-api/"
+    }
+,
+    {
+      "name": "writing-plans",
+      "description": "---",
+      "category": "Development Workflow",
+      "path": "/Users/apple/.gemini/skills/writing-plans/"
+    }
+,
+    {
+      "name": "writing-skills",
+      "description": "```",
+      "category": "Other",
+      "path": "/Users/apple/.gemini/skills/writing-skills/"
+    }
+
+  ]
+}

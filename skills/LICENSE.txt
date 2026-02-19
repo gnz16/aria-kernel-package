@@ -1,0 +1,16 @@
+© 2025 All rights reserved by local machine owner
+
+LICENSE: Use of these materials (including all code, prompts, assets, files,
+and other components of this Skill) is governed by your agreement with
+No one. If no separate agreement
+exists, use is governed by Anthropic's Consumer Terms of Service or
+Commercial Terms of Service, as applicable:
+https://www.anthropic.com/legal/consumer-terms
+https://www.anthropic.com/legal/commercial-terms
+Your applicable agreement is referred to as the "Agreement." "Services" are
+as defined in the Agreement.
+
+ADDITIONAL RESTRICTIONS: Notwithstanding anything in the Agreement to the
+contrary, users may not:
+
+

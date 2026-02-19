@@ -1,0 +1,36 @@
+{
+    "aria_version": "7.7.0",
+    "objective": "Not defined",
+    "status": "idle",
+    "current_subtask": null,
+    "subtasks": [],
+    "completed_subtasks": [],
+    "history": [],
+    "context": {
+        "files": [],
+        "recent_tool_results": {}
+    },
+    "resonance_state": {
+        "current_blend": null,
+        "weight_ratio": [],
+        "reason": null,
+        "constellation_active": false,
+        "active_agents": []
+    },
+    "attunement": {
+        "strategic_priorities": [],
+        "dissonance_flags": [],
+        "session_blend_rationale": null
+    },
+    "telemetry": {
+        "step_count": 0,
+        "rarv_cycles": 0,
+        "dissonance_events": 0
+    },
+    "security_hud": {
+        "danger_level": "LOW",
+        "recent_events": [],
+        "tripwires_active": true
+    },
+    "last_updated": "{{TIMESTAMP}}"
+}

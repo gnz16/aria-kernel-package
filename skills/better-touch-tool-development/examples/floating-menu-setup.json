@@ -1,0 +1,25 @@
+{
+    "BTTFloatingMenuName": "My Custom Menu",
+    "BTTFloatingMenuIdentifier": "my-custom-menu",
+    "BTTFloatingMenuConfig": {
+        "size": {
+            "width": 200,
+            "height": 300
+        },
+        "backgroundColor": "0, 0, 0, 200",
+        "cornerRadius": 12,
+        "items": [
+            {
+                "label": "Volume Up",
+                "action": "trigger_named",
+                "actionName": "VolumeUpTrigger"
+            },
+            {
+                "label": "Brightness Down",
+                "action": "key_shortcut",
+                "shortcut": "F1"
+            }
+        ]
+    },
+    "note": "This is a conceptual JSON structure. In reality, BTT floating menus are often configured via the UI, but you can copy/paste JSON from BTT to share configurations or generate them."
+}

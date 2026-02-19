@@ -1,0 +1,49 @@
+---
+name: "Bug Fix Workflow"
+description: "Systematic approach to fixing bugs with root cause analysis"
+category: "Debugging"
+estimated_time: "30 minutes - 2 hours"
+skills_used: 5
+token_efficiency: "high"
+
+steps:
+  - step: 1
+    skill: systematic-debugging
+    action: "Phase 1: Root cause investigation"
+    output: "Root cause identified"
+    auto_proceed: false
+    
+  - step: 2
+    skill: git-worktrees
+    action: "Create bug-fix branch"
+    output: "Isolated workspace"
+    auto_proceed: true
+    
+  - step: 3
+    skill: test-driven-development
+    action: "Write failing test reproducing bug"
+    output: "Failing test (RED)"
+    auto_proceed: false
+    
+  - step: 4
+    skill: systematic-debugging
+    action: "Implement minimal fix"
+    output: "Bug fixed"
+    auto_proceed: false
+    
+  - step: 5
+    skill: verification-before-completion
+    action: "Verify fix + regression testing"
+    output: "All tests pass (GREEN)"
+    auto_proceed: true
+
+validation:
+  - "Bug reproduced in test"
+  - "Fix implemented"
+  - "All tests pass"
+  - "No regressions"
+  
+deliverables:
+  - "Bug fix"
+  - "Test case"
+  - "Root cause documentation"

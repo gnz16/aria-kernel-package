@@ -1,0 +1,54 @@
+---
+name: "Documentation Workflow"
+description: "Create comprehensive project documentation"
+category: "Documentation"
+estimated_time: "30 minutes - 1 hour"
+skills_used: 5
+token_efficiency: "very high"
+
+steps:
+  - step: 1
+    skill: config-builder
+    action: "Create/update GEMINI.md"
+    output: "Workspace configuration"
+    auto_proceed: true
+    
+  - step: 2
+    skill: docx
+    action: "Generate user manual"
+    output: "User documentation (Word)"
+    optional: true
+    auto_proceed: false
+    
+  - step: 3
+    skill: pptx
+    action: "Create presentation/pitch deck"
+    output: "PowerPoint presentation"
+    optional: true
+    auto_proceed: false
+    
+  - step: 4
+    skill: pdf
+    action: "Generate technical documentation"
+    output: "PDF documentation"
+    optional: true
+    auto_proceed: false
+    
+  - step: 5
+    skill: writing-skills
+    action: "Document project-specific patterns"
+    output: "Custom documentation"
+    optional: true
+    auto_proceed: false
+
+validation:
+  - "README.md updated"
+  - "API docs complete"
+  - "User guide exists"
+  - "Code examples included"
+  
+deliverables:
+  - "Project documentation"
+  - "User manual"
+  - "Technical specs"
+  - "Presentation materials"

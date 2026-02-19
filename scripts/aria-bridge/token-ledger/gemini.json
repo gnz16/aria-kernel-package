@@ -1,0 +1,8 @@
+{
+    "agent": "gemini",
+    "description": "Antigravity IDE — Planning, file edits, UI, research",
+    "tokens_per_full_read": 400,
+    "total_sessions": 0,
+    "total_tokens_saved": 0,
+    "sessions": []
+}

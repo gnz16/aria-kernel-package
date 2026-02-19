@@ -1,0 +1,38 @@
+{
+    "name": "ui-testing-system",
+    "version": "1.0.0",
+    "description": "Modern UI testing framework using Playwright and TypeScript",
+    "main": "dist/index.js",
+    "type": "module",
+    "scripts": {
+        "build": "tsc",
+        "test": "node --loader ts-node/esm examples/login-test.ts",
+        "test:all": "npm run build && node dist/examples/login-test.js",
+        "example:login": "tsx examples/login-test.ts",
+        "example:workflow": "tsx examples/form-workflow-test.ts",
+        "example:advanced": "tsx examples/advanced-test.ts",
+        "master": "tsx examples/master-skill-demo.ts",
+        "master:parallel": "tsx examples/master-skill-demo.ts --parallel",
+        "master:suite": "tsx examples/master-skill-demo.ts --suite",
+        "master:test": "tsx examples/master-skill-demo.ts --test"
+    },
+    "keywords": [
+        "testing",
+        "ui-testing",
+        "playwright",
+        "automation",
+        "e2e"
+    ],
+    "author": "",
+    "license": "MIT",
+    "devDependencies": {
+        "@types/node": "^20.10.0",
+        "typescript": "^5.3.3",
+        "tsx": "^4.7.0"
+    },
+    "dependencies": {
+        "@playwright/test": "^1.40.1",
+        "playwright": "^1.40.1",
+        "chalk": "^5.3.0"
+    }
+}

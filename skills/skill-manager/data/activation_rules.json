@@ -1,0 +1,94 @@
+{
+    "activation_rules": {
+        "nextjs": {
+            "skills": [
+                "react-best-practices",
+                "frontend-patterns",
+                "web-design-guidelines",
+                "ui-testing",
+                "docker-automation"
+            ],
+            "priority": "high",
+            "auto_activate": true
+        },
+        "react": {
+            "skills": [
+                "react-best-practices",
+                "frontend-patterns",
+                "web-design-guidelines",
+                "ui-testing"
+            ],
+            "priority": "high",
+            "auto_activate": true
+        },
+        "nodejs": {
+            "skills": [
+                "backend-patterns",
+                "coding-standards",
+                "test-driven-development"
+            ],
+            "priority": "medium",
+            "auto_activate": true
+        },
+        "python": {
+            "skills": [
+                "backend-patterns",
+                "coding-standards",
+                "test-driven-development"
+            ],
+            "priority": "medium",
+            "auto_activate": true
+        },
+        "fastapi": {
+            "skills": [
+                "backend-patterns",
+                "test-driven-development",
+                "docker-automation"
+            ],
+            "priority": "high",
+            "auto_activate": true
+        },
+        "docker": {
+            "skills": [
+                "docker-automation",
+                "developing-with-docker"
+            ],
+            "priority": "high",
+            "auto_activate": true
+        },
+        "aws": {
+            "skills": [
+                "aws-iam",
+                "aws-lambda",
+                "aws-s3",
+                "aws-cloudformation",
+                "docker-automation"
+            ],
+            "priority": "high",
+            "auto_activate": true
+        },
+        "typescript": {
+            "skills": [
+                "coding-standards",
+                "test-driven-development"
+            ],
+            "priority": "medium",
+            "auto_activate": true
+        },
+        "playwright": {
+            "skills": [
+                "ui-testing",
+                "test-driven-development"
+            ],
+            "priority": "high",
+            "auto_activate": true
+        }
+    },
+    "workflow_suggestions": {
+        "nextjs + aws": "aws-deployment",
+        "react + testing": "testing",
+        "python + docker": "aws-deployment",
+        "any + bug": "bug-fix",
+        "any + feature": "feature-development"
+    }
+}

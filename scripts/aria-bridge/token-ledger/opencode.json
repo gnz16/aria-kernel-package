@@ -1,0 +1,41 @@
+{
+  "agent": "opencode",
+  "description": "OpenCode — Token optimization, refactoring, Desktop Commander MCP",
+  "tokens_per_full_read": 260,
+  "total_sessions": 3,
+  "total_tokens_saved": 400,
+  "total_tokens_consumed": 660,
+  "sessions": [
+    {
+      "timestamp": "2026-02-18T19:41:27.675804",
+      "read_mode": "full",
+      "context_source": "project-state.md",
+      "tokens_consumed": 260,
+      "tokens_saved": 0,
+      "task_id": "BRIDGE-001"
+    },
+    {
+      "timestamp": "2026-02-18T19:47:21.819121",
+      "read_mode": "delta",
+      "context_source": "delta.md",
+      "tokens_consumed": 120,
+      "tokens_saved": 400,
+      "task_id": "BRIDGE-O001"
+    },
+    {
+      "timestamp": "2026-02-18T23:10:00+05:30",
+      "read_mode": "full",
+      "context_source": "project-state.md",
+      "tokens_consumed": 280,
+      "tokens_saved": 0,
+      "task_id": "BRIDGE-006",
+      "compression_output": "delta.md updated"
+    }
+  ],
+  "metrics": {
+    "avg_savings_per_session": 133,
+    "savings_rate_percent": 37.7,
+    "peak_session_tokens": 280,
+    "last_updated": "2026-02-18T23:10:00+05:30"
+  }
+}

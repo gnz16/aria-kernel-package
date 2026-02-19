@@ -1,0 +1,2507 @@
+{
+  "version": "1.0.0",
+  "last_updated": "2026-01-26T13:13:13Z",
+  "total_skills": 250,
+  "skills": {
+    "3d-web-experience": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "ab-test-setup": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "active-directory-attacks": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "address-github-comments": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "agent-evaluation": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "agent-manager-skill": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "agent-memory-systems": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "agent-tool-builder": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "ai-agents-architect": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "ai-product": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "ai-wrapper-product": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "algolia-search": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "algorithmic-art": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "analytics-tracking": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "api-fuzzing-bug-bounty": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "api-patterns": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "app-builder": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "app-store-optimization": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "architecture": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "autonomous-agent-patterns": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "autonomous-agents": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "aws-api-gateway": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "aws-bedrock": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "aws-cloudformation": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "aws-dynamodb": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "aws-ec2": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "aws-eks": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "aws-iam": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "aws-lambda": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "aws-penetration-testing": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "aws-s3": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "aws-serverless": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "azure-functions": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "backend-dev-guidelines": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "backend-patterns": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "bash-linux": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "behavioral-modes": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "blockrun": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "brainstorming": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "brand-guidelines-anthropic": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "brand-guidelines-community": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "broken-authentication": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "browser-automation": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "browser-extension-builder": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "bullmq-specialist": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "bun-development": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "burp-suite-testing": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "canvas-design": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "claude-code-guide": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "claude-d3js-skill": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "clean-code": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "clerk-auth": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "cloud-penetration-testing": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "code-review-checklist": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "coding-standards": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "competitor-alternatives": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "computer-use-agents": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "concise-planning": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "config-builder": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "content-creator": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "context-window-management": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "conversation-memory": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "copy-editing": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "copywriting": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "core-components": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "crewai": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "database-design": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "deployment-procedures": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "developing-with-docker": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "discord-bot-architect": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "dispatching-parallel-agents": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "doc-coauthoring": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "docker-automation": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "docker-expert": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "documentation-templates": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "docx-official": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "docx": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "email-sequence": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "email-systems": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "ethical-hacking-methodology": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "executing-plans": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "file-organizer": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "file-path-traversal": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "file-uploads": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "finishing-a-development-branch": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "firebase": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "form-cro": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "free-tool-strategy": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "frontend-design": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "frontend-dev-guidelines": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "frontend-patterns": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "game-development": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "gcp-cloud-run": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "geo-fundamentals": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "git-pushing": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "git-worktrees": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "github-skill-scraper": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "github-workflow-automation": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "graphql": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "html-injection-testing": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "hubspot-integration": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "i18n-localization": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "idor-testing": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "inngest": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "interactive-portfolio": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "internal-comms-anthropic": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "internal-comms-community": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "javascript-mastery": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "kaizen": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "langfuse": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "langgraph": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "launch-strategy": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "lint-and-validate": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "linux-privilege-escalation": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "linux-shell-scripting": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "llm-app-patterns": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "loki-mode": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "marketing-ideas": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "marketing-psychology": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "mcp-builder": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "metasploit-framework": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "micro-saas-launcher": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "mobile-design": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "moodle-external-api-development": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "neon-postgres": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "nestjs-expert": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "network-101": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "nextjs-best-practices": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "nextjs-supabase-auth": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "nodejs-best-practices": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "notebooklm": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "notion-template-business": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "ocr": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "onboarding-cro": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "page-cro": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "paid-ads": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "parallel-agents": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "paywall-upgrade-cro": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "pdf-official": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "pdf": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "pentest-checklist": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "pentest-commands": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "performance-profiling": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "personal-tool-builder": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "plaid-fintech": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "plan-writing": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "planning-with-files": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "playwright-skill": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "popup-cro": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "powershell-windows": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "pptx-official": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "pptx": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "pricing-strategy": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "prisma-expert": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "privilege-escalation-methods": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "product-manager-toolkit": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "programmatic-seo": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "prompt-caching": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "prompt-engineer": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "prompt-engineering": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "prompt-library": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "python-patterns": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "rag-engineer": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "rag-implementation": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "react-best-practices": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "react-patterns": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "react-ui-patterns": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "receiving-code-review": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "red-team-tactics": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "red-team-tools": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "referral-program": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "requesting-code-review": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "research-engineer": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "salesforce-development": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "scanning-tools": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "schema-markup": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "scroll-experience": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "security-review": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "segment-cdp": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "senior-architect": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "senior-fullstack": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "seo-audit": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "seo-fundamentals": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "server-management": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "shodan-reconnaissance": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "shopify-apps": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "shopify-development": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "signup-flow-cro": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "skill-creator": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "skill-developer": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "skill-installer": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "skill-maintenance": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "slack-bot-builder": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "slack-gif-creator": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "smtp-penetration-testing": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "social-content": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "software-architecture": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "sql-injection-testing": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "sqlmap-database-pentesting": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "ssh-penetration-testing": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "stripe-integration": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "subagent-driven-development": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "systematic-debugging": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "tailwind-patterns": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "tdd-workflow": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "telegram-bot-builder": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "telegram-mini-app": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "test-driven-development": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "test-fixing": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "testing-patterns": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "theme-factory": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "top-web-vulnerabilities": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "trigger-dev": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "twilio-communications": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "typescript-expert": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "ui-testing": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "ui-ux-pro-max": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "upstash-qstash": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "using-git-worktrees": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "using-superpowers": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "vercel-deployment": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "verification-before-completion": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "viral-generator-builder": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "voice-agents": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "voice-ai-development": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "vulnerability-scanner": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "web-artifacts-builder": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "web-design-guidelines": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "webapp-testing": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "windows-privilege-escalation": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "wireshark-analysis": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "wordpress-penetration-testing": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "wordpress-router": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "workflow-automation": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "wp-abilities-api": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "wp-block-development": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "wp-block-themes": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "wp-interactivity-api": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "wp-performance": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "wp-phpstan": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "wp-playground": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "wp-plugin-development": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "wp-project-triage": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "wp-wpcli-and-ops": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "writing-plans": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "writing-skills": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "xlsx-official": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "xlsx": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "xss-html-injection": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    },
+    "zapier-make-patterns": {
+      "activations": 0,
+      "completions": 0,
+      "failures": 0,
+      "success_rate": 0,
+      "total_tokens": 0,
+      "avg_tokens": 0,
+      "weight": 80,
+      "last_used": null
+    }
+  }
+}

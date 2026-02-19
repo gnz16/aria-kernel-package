@@ -1,0 +1,84 @@
+{
+    "skill_chains": {
+        "description": "Auto-suggest next skills based on completion",
+        "chains": {
+            "brainstorming": [
+                {
+                    "next": "writing-plans",
+                    "confidence": 0.9,
+                    "reason": "Plans naturally follow brainstorming",
+                    "auto_suggest": true
+                },
+                {
+                    "next": "test-driven-development",
+                    "confidence": 0.7,
+                    "reason": "TDD can start after requirements clear"
+                }
+            ],
+            "writing-plans": [
+                {
+                    "next": "executing-plans",
+                    "confidence": 0.95,
+                    "reason": "Execute after planning"
+                },
+                {
+                    "next": "git-worktrees",
+                    "confidence": 0.8,
+                    "reason": "Isolate work in branch"
+                }
+            ],
+            "test-driven-development": [
+                {
+                    "next": "systematic-debugging",
+                    "confidence": 0.8,
+                    "reason": "Debug if tests fail",
+                    "condition": "test.failed"
+                },
+                {
+                    "next": "verification-before-completion",
+                    "confidence": 0.95,
+                    "reason": "Verify if tests pass",
+                    "condition": "test.passed"
+                }
+            ],
+            "docker-automation": [
+                {
+                    "next": "aws-eks",
+                    "confidence": 0.7,
+                    "reason": "Deploy containers to Kubernetes"
+                },
+                {
+                    "next": "developing-with-docker",
+                    "confidence": 0.6,
+                    "reason": "Best practices for Docker"
+                }
+            ],
+            "systematic-debugging": [
+                {
+                    "next": "test-driven-development",
+                    "confidence": 0.85,
+                    "reason": "Add test for fixed bug"
+                },
+                {
+                    "next": "verification-before-completion",
+                    "confidence": 0.9,
+                    "reason": "Verify fix works"
+                }
+            ],
+            "security-review": [
+                {
+                    "next": "verification-before-completion",
+                    "confidence": 0.9,
+                    "reason": "Final check after security review"
+                }
+            ],
+            "ui-testing": [
+                {
+                    "next": "verification-before-completion",
+                    "confidence": 0.85,
+                    "reason": "Verify all tests pass"
+                }
+            ]
+        }
+    }
+}

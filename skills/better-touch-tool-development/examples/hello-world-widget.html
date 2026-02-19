@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BTT Hello World Widget</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: rgba(0, 0, 0, 0.5);
+            /* Semi-transparent background */
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            color: white;
+            overflow: hidden;
+        }
+
+        .container {
+            text-align: center;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        h1 {
+            font-size: 16px;
+            margin-bottom: 10px;
+            font-weight: 500;
+        }
+
+        button {
+            background: #007AFF;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 6px;
+            font-size: 14px;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+
+        button:hover {
+            background: #0062cc;
+        }
+
+        button:active {
+            transform: scale(0.98);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Hello BTT!</h1>
+        <button onclick="runAction()">Click Me</button>
+    </div>
+
+    <script>
+        function runAction() {
+            // This function triggers the action assigned to this widget in BTT
+            // For example, if you assigned "Launch App" to this widget, clicking this button will launch it.
+            if (window.webkit && window.webkit.messageHandlers && window.webkit.messageHandlers.BTTTriggerAssignedActions) {
+                window.webkit.messageHandlers.BTTTriggerAssignedActions.postMessage("trigger");
+            } else {
+                console.log("BTTTriggerAssignedActions not found. Are you running this inside BTT?");
+                alert("Action Triggered! (Test Mode)");
+            }
+        }
+    </script>
+</body>
+
+</html>

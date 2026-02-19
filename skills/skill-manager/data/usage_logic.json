@@ -1,0 +1,118 @@
+{
+    "usage_logic": {
+        "version": "1.0.0",
+        "description": "Intelligent skill selection and usage system",
+        "auto_activation_rules": {
+            "description": "Skills auto-activate based on context detection",
+            "rules": {
+                "file_extensions": {
+                    ".tsx": [
+                        "react-best-practices",
+                        "frontend-patterns",
+                        "test-driven-development"
+                    ],
+                    ".ts": [
+                        "coding-standards",
+                        "test-driven-development"
+                    ],
+                    ".py": [
+                        "backend-patterns",
+                        "coding-standards"
+                    ],
+                    ".yml": [
+                        "docker-automation",
+                        "aws-cloudformation"
+                    ],
+                    "Dockerfile": [
+                        "docker-automation",
+                        "developing-with-docker"
+                    ],
+                    "package.json": [
+                        "frontend-patterns",
+                        "backend-patterns"
+                    ]
+                },
+                "directory_patterns": {
+                    "test/": [
+                        "test-driven-development",
+                        "ui-testing"
+                    ],
+                    "tests/": [
+                        "test-driven-development",
+                        "ui-testing"
+                    ],
+                    "__tests__/": [
+                        "test-driven-development",
+                        "ui-testing"
+                    ],
+                    "workflows/": [
+                        "executing-plans",
+                        "dispatching-parallel-agents"
+                    ],
+                    "docker/": [
+                        "docker-automation"
+                    ],
+                    ".github/": [
+                        "git-worktrees",
+                        "requesting-code-review"
+                    ]
+                },
+                "task_keywords": {
+                    "test": [
+                        "test-driven-development",
+                        "ui-testing",
+                        "systematic-debugging"
+                    ],
+                    "debug": [
+                        "systematic-debugging",
+                        "verification-before-completion"
+                    ],
+                    "deploy": [
+                        "docker-automation",
+                        "aws-cloudformation",
+                        "aws-eks"
+                    ],
+                    "review": [
+                        "requesting-code-review",
+                        "security-review"
+                    ],
+                    "optimize": [
+                        "react-best-practices",
+                        "frontend-patterns"
+                    ],
+                    "fix": [
+                        "systematic-debugging",
+                        "git-worktrees"
+                    ],
+                    "create": [
+                        "brainstorming",
+                        "writing-plans"
+                    ]
+                }
+            }
+        },
+        "skill_priority": {
+            "description": "Priority order for skill activation (higher = earlier)",
+            "priorities": {
+                "verification-before-completion": 100,
+                "test-driven-development": 95,
+                "systematic-debugging": 90,
+                "security-review": 85,
+                "brainstorming": 80,
+                "coding-standards": 75
+            }
+        },
+        "learning_patterns": {
+            "description": "System learns from usage patterns",
+            "enabled": true,
+            "min_data_points": 10,
+            "confidence_threshold": 0.7
+        },
+        "context_weights": {
+            "recent_usage": 0.3,
+            "success_rate": 0.4,
+            "keyword_match": 0.2,
+            "dependency_bonus": 0.1
+        }
+    }
+}

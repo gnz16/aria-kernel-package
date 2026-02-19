@@ -1,0 +1,61 @@
+{
+    "skill_prerequisites": {
+        "description": "Required and recommended skills before activation",
+        "prerequisites": {
+            "aws-eks": {
+                "required": [
+                    "docker-automation",
+                    "aws-iam"
+                ],
+                "recommended": [
+                    "aws-cloudformation"
+                ],
+                "reason": "EKS needs containers and IAM permissions"
+            },
+            "aws-lambda": {
+                "required": [
+                    "aws-iam"
+                ],
+                "recommended": [
+                    "test-driven-development"
+                ],
+                "reason": "Lambda needs IAM roles"
+            },
+            "docker-automation": {
+                "required": [],
+                "recommended": [
+                    "coding-standards",
+                    "security-review"
+                ],
+                "reason": "Best practices before containerization"
+            },
+            "requesting-code-review": {
+                "required": [],
+                "recommended": [
+                    "test-driven-development",
+                    "verification-before-completion"
+                ],
+                "reason": "Ensure quality before review"
+            },
+            "finishing-a-development-branch": {
+                "required": [
+                    "verification-before-completion"
+                ],
+                "recommended": [
+                    "test-driven-development",
+                    "security-review"
+                ],
+                "reason": "Must verify before merging"
+            },
+            "executing-plans": {
+                "required": [
+                    "writing-plans"
+                ],
+                "recommended": [
+                    "brainstorming"
+                ],
+                "reason": "Need plan before execution"
+            }
+        }
+    }
+}

@@ -1,0 +1,24 @@
+{
+  "agent": "claude",
+  "description": "Claude Code \u2014 Security audits, testing, git ops",
+  "tokens_per_full_read": 400,
+  "total_sessions": 3,
+  "total_tokens_saved": 0,
+  "sessions": [
+    {
+      "timestamp": "2026-02-18T22:23:55.714721",
+      "read_mode": "full",
+      "tokens_saved": 0
+    },
+    {
+      "timestamp": "2026-02-18T22:49:10.947845",
+      "read_mode": "full",
+      "tokens_saved": 0
+    },
+    {
+      "timestamp": "2026-02-19T00:58:17.095092",
+      "read_mode": "full",
+      "tokens_saved": 0
+    }
+  ]
+}

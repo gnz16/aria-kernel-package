@@ -1,0 +1,73 @@
+---
+name: "Feature Development Workflow"
+description: "Complete workflow for developing new features with TDD and best practices"
+category: "Development"
+estimated_time: "2-4 hours"
+skills_used: 8
+token_efficiency: "high"
+
+# Workflow Steps - Execute in order
+steps:
+  - step: 1
+    skill: brainstorming
+    action: "Refine feature requirements"
+    output: "Clear feature specification"
+    auto_proceed: false
+    
+  - step: 2
+    skill: writing-plans
+    action: "Create implementation plan"
+    output: "implementation_plan.md"
+    auto_proceed: true
+    
+  - step: 3
+    skill: git-worktrees
+    action: "Create isolated feature branch"
+    output: "Clean workspace"
+    auto_proceed: true
+    
+  - step: 4
+    skill: test-driven-development
+    action: "Write failing tests first"
+    output: "Test suite (RED)"
+    auto_proceed: false
+    
+  - step: 5
+    skill: react-best-practices
+    action: "Build frontend (if applicable)"
+    output: "React components"
+    optional: true
+    auto_proceed: false
+    
+  - step: 6
+    skill: backend-patterns
+    action: "Build API (if applicable)"
+    output: "API endpoints"
+    optional: true
+    auto_proceed: false
+    
+  - step: 7
+    skill: ui-testing
+    action: "Create E2E tests"
+    output: "Browser test suite"
+    auto_proceed: false
+    
+  - step: 8
+    skill: verification-before-completion
+    action: "Final validation"
+    output: "Verified feature"
+    auto_proceed: true
+
+# Success Criteria
+validation:
+  - "All tests pass (GREEN)"
+  - "Code review ready"
+  - "Documentation updated"
+  - "No linting errors"
+  
+# Expected Outputs
+deliverables:
+  - "Feature implementation"
+  - "Test suite"
+  - "Documentation"
+  - "Git branch ready for PR"

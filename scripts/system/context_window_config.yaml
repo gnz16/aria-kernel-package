@@ -1,0 +1,45 @@
+# Context Window Management Configuration
+# ARIA v7.7 Token Reduction System
+
+# Tiered Context Strategy
+context_strategy:
+  small: "all"              # < 4K tokens: include everything
+  medium: "sliding_window"  # 4K-16K: sliding window with key refs
+  large: "summarized"       # > 16K: summarize old content
+
+# Serial Position Optimization  
+serial_position:
+  important_first: true     # Place critical info at start
+  important_last: true      # Place action items at end
+  buffer_zone: 2            # Lines of padding around important content
+
+# Intelligent Summarization
+summarization:
+  by_importance: true       # Weight by relevance, not just recency
+  preserve_patterns:        # Keep these patterns verbatim
+    - "TODO"
+    - "FIXME"
+    - "DECISION"
+    - "BLOCKER"
+  min_summary_ratio: 0.3    # Don't compress below 30% of original
+  
+# Token Counting
+token_counter:
+  enabled: true
+  check_interval: 10        # Check every 10 messages
+  warning_threshold: 2000   # Warn at 2K tokens in history
+  critical_threshold: 4000  # Force trim at 4K tokens
+
+# Auto-Trimming Rules
+auto_trim:
+  enabled: true
+  max_history_turns: 20     # Keep last N turns maximum
+  preserve_turns: 5         # Always keep this many recent turns
+  trim_by: "oldest_first"   # Remove oldest first
+
+# RAG Integration (when context gets large)
+rag_mode:
+  enabled: false            # Set true when embedding storage available
+  vector_store: "~/.gemini/_vectors"
+  chunk_size: 512
+  overlap: 50

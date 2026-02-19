@@ -1,0 +1,15 @@
+{
+    "browserType": "chromium",
+    "headless": false,
+    "timeout": 10000,
+    "retryFailedTests": true,
+    "maxRetries": 2,
+    "screenshotOnFailure": true,
+    "videoRecording": false,
+    "aiValidationEnabled": true,
+    "tokenBudget": 10000,
+    "parallelExecution": false,
+    "maxParallelThreads": 4,
+    "reportFormat": "HTML",
+    "reportPath": "./test-results"
+}

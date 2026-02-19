@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARIA | Mission Control v2.0</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=JetBrains+Mono:wght@400;700&display=swap"
+        rel="stylesheet">
+    <style>
+        :root {
+            --bg: #050507;
+            --panel: rgba(15, 15, 20, 0.8);
+            --accent: #00f2ff;
+            --accent-glow: rgba(0, 242, 255, 0.2);
+            --text: #ffffff;
+            --text-dim: #a0a0b0;
+            --success: #00ff88;
+            --error: #ff3366;
+            --warning: #ffcc00;
+            --border: rgba(255, 255, 255, 0.08);
+            --rarv-reason: #7c4dff;
+            --rarv-act: #00e676;
+            --rarv-reflect: #ffa726;
+            --rarv-verify: #26c6da;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Outfit', sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            overflow-x: hidden;
+            background-image:
+                radial-gradient(circle at 10% 10%, rgba(0, 242, 255, 0.05) 0%, transparent 50%),
+                radial-gradient(circle at 90% 90%, rgba(124, 77, 255, 0.05) 0%, transparent 50%);
+            background-attachment: fixed;
+        }
+
+        .container {
+            max-width: 1600px;
+            margin: 0 auto;
+            padding: 1.5rem;
+        }
+
+        /* Nav & Header */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 2rem;
+            padding: 1rem 1.5rem;
+            background: var(--panel);
+            backdrop-filter: blur(20px);
+            border-radius: 12px;
+            border: 1px solid var(--border);
+            position: sticky;
+            top: 1rem;
+            z-index: 100;
+        }
+
+        .logo {
+            font-size: 1.2rem;
+            font-weight: 800;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: var(--accent);
+            text-shadow: 0 0 10px var(--accent-glow);
+        }
+
+        .logo span {
+            color: var(--text);
+            font-weight: 300;
+            margin-left: 8px;
+            font-size: 0.9rem;
+        }
+
+        .header-meta {
+            display: flex;
+            gap: 2rem;
+            font-size: 0.8rem;
+            color: var(--text-dim);
+            font-family: 'JetBrains Mono', monospace;
+        }
+
+        /* Grid Layout */
+        .dashboard-grid {
+            display: grid;
+            grid-template-columns: 320px 1fr 380px;
+            gap: 1.5rem;
+            align-items: start;
+        }
+
+        /* Common Card Component */
+        .card {
+            background: var(--panel);
+            backdrop-filter: blur(15px);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            transition: transform 0.3s ease, border-color 0.3s ease;
+        }
+
+        .card:hover {
+            border-color: rgba(0, 242, 255, 0.3);
+        }
+
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1.25rem;
+        }
+
+        .card-title {
+            font-size: 0.9rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--accent);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        /* Stats Bar */
+        .top-stats {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .stat-item {
+            background: var(--panel);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 1rem;
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        .stat-label {
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            color: var(--text-dim);
+        }
+
+        .stat-value {
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: var(--text);
+        }
+
+        /* Timeline & Filters */
+        .timeline-controls {
+            display: flex;
+            gap: 0.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .filter-btn {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid var(--border);
+            color: var(--text-dim);
+            padding: 4px 12px;
+            border-radius: 6px;
+            font-size: 0.75rem;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .filter-btn:hover,
+        .filter-btn.active {
+            background: var(--accent-glow);
+            border-color: var(--accent);
+            color: var(--accent);
+        }
+
+        .timeline {
+            position: relative;
+            padding-left: 1rem;
+        }
+
+        .timeline-item {
+            border-left: 2px solid var(--border);
+            padding-left: 1.5rem;
+            padding-bottom: 2rem;
+            position: relative;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -7px;
+            top: 5px;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: var(--bg);
+            border: 2px solid var(--border);
+            transition: all 0.3s;
+        }
+
+        .timeline-item.active::before {
+            background: var(--accent);
+            border-color: var(--accent);
+            box-shadow: 0 0 10px var(--accent);
+        }
+
+        .step-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            padding: 0.75rem;
+            background: rgba(255, 255, 255, 0.02);
+            border-radius: 8px;
+        }
+
+        .step-info {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .step-time {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.7rem;
+            color: var(--text-dim);
+        }
+
+        .phase-pill {
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 0.65rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            color: #fff;
+        }
+
+        .pill-reason {
+            background: var(--rarv-reason);
+        }
+
+        .pill-act {
+            background: var(--rarv-act);
+        }
+
+        .pill-reflect {
+            background: var(--rarv-reflect);
+        }
+
+        .pill-verify {
+            background: var(--rarv-verify);
+        }
+
+        .step-content {
+            padding: 1rem;
+            display: none;
+            background: rgba(0, 0, 0, 0.2);
+            border-radius: 0 0 8px 8px;
+            font-size: 0.9rem;
+            border: 1px solid var(--border);
+            border-top: none;
+        }
+
+        .step-content.expanded {
+            display: block;
+        }
+
+        /* Memory Tiers Visualizer */
+        .memory-tiers {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .tier-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            background: rgba(255, 255, 255, 0.03);
+            border-radius: 8px;
+            border: 1px solid var(--border);
+        }
+
+        .tier-label {
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+
+        .tier-status {
+            font-size: 0.7rem;
+            color: var(--success);
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        /* Progress Bar */
+        .progress-container {
+            width: 100%;
+            height: 6px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 10px;
+            margin-top: 5px;
+            overflow: hidden;
+        }
+
+        .progress-bar {
+            height: 100%;
+            background: linear-gradient(90deg, var(--accent), var(--rarv-verify));
+            transition: width 0.5s ease;
+        }
+
+        /* List Styling */
+        .task-list,
+        .file-list {
+            list-style: none;
+        }
+
+        .task-list li,
+        .file-list li {
+            padding: 8px 0;
+            font-size: 0.85rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .task-list li:last-child {
+            border: none;
+        }
+
+        .check-icon {
+            color: var(--success);
+            font-weight: bold;
+        }
+
+        .active-icon {
+            color: var(--accent);
+            animation: rotate 2s linear infinite;
+        }
+
+        @keyframes rotate {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        /* Tools & Diffs */
+        .tool-call {
+            margin-top: 10px;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.75rem;
+            color: var(--accent);
+            background: rgba(0, 242, 255, 0.05);
+            padding: 8px;
+            border-radius: 4px;
+            border-left: 2px solid var(--accent);
+        }
+
+        /* Animations */
+        .fade-in {
+            animation: fadeIn 0.5s ease forwards;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 6px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: transparent;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: var(--border);
+            border-radius: 10px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: var(--accent);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">ARIA<span>MISSION CONTROL v2.0</span></div>
+            <div class="header-meta">
+                <div id="meta-session">SESSION: 2026-02-06</div>
+                <div id="meta-os">OS: MAC / ZSH</div>
+            </div>
+            <div style="display: flex; align-items: center; gap: 15px;">
+                <div class="stat-label">System Health: <span style="color: var(--success);">OPTIMAL</span></div>
+                <button class="filter-btn active" onclick="location.reload()">SYNC LIVE</button>
+            </div>
+        </header>
+
+        <div class="top-stats">
+            <div class="stat-item fade-in" style="animation-delay: 0.1s;">
+                <div class="stat-label">Current Progress</div>
+                <div class="stat-value" id="stat-progress">0%</div>
+                <div class="progress-container">
+                    <div class="progress-bar" id="bar-progress" style="width: 0%;"></div>
+                </div>
+            </div>
+            <div class="stat-item fade-in" style="animation-delay: 0.2s;">
+                <div class="stat-label">RARV Cycles Ran</div>
+                <div class="stat-value" id="stat-cycles">0</div>
+            </div>
+            <div class="stat-item fade-in" style="animation-delay: 0.3s;">
+                <div class="stat-label">Active Files</div>
+                <div class="stat-value" id="stat-files">0</div>
+            </div>
+            <div class="stat-item fade-in" style="animation-delay: 0.4s;">
+                <div class="stat-label">Context Depth</div>
+                <div class="stat-value" id="stat-depth">0 KB</div>
+            </div>
+        </div>
+
+        <div class="dashboard-grid">
+            <!-- Sidebar Left -->
+            <aside>
+                <div class="card fade-in">
+                    <div class="card-title">📂 Task Delegation</div>
+                    <ul class="task-list" id="task-stack">
+                        <!-- Tasks go here -->
+                    </ul>
+                </div>
+
+                <div class="card fade-in">
+                    <div class="card-title">🧠 Memory Tiers</div>
+                    <div class="memory-tiers">
+                        <div class="tier-item">
+                            <div class="tier-label">CONTINUITY</div>
+                            <div class="tier-status"><span>●</span> ACTIVE</div>
+                        </div>
+                        <div class="tier-item">
+                            <div class="tier-label">STATE LAYER</div>
+                            <div class="tier-status"><span>●</span> SYNCED</div>
+                        </div>
+                        <div class="tier-item">
+                            <div class="tier-label">CORE KERNEL</div>
+                            <div class="tier-status"><span>●</span> IMMUTABLE</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card fade-in">
+                    <div class="card-title">📊 Session Matrix</div>
+                    <div id="session-matrix" style="font-size: 0.75rem; font-family: 'JetBrains Mono';">
+                        <!-- Matrix stats -->
+                    </div>
+                </div>
+            </aside>
+
+            <!-- Main Timeline -->
+            <main>
+                <div class="card fade-in">
+                    <div class="card-header">
+                        <div class="card-title">🕒 Chronological RARV Stream</div>
+                        <div class="timeline-controls">
+                            <button class="filter-btn active" data-filter="all">ALL</button>
+                            <button class="filter-btn" data-filter="REASON">REASON</button>
+                            <button class="filter-btn" data-filter="ACT">ACT</button>
+                            <button class="filter-btn" data-filter="REFLECT">REFLECT</button>
+                            <button class="filter-btn" data-filter="VERIFY">VERIFY</button>
+                        </div>
+                    </div>
+
+                    <div class="timeline" id="rarv-stream">
+                        <!-- RARV items -->
+                    </div>
+                </div>
+            </main>
+
+            <!-- Sidebar Right -->
+            <aside>
+                <div class="card fade-in">
+                    <div class="card-title">🏁 Global Objective</div>
+                    <div id="objective-raw" style="font-size: 1.1rem; margin-top: 10px;">
+                        Loading...
+                    </div>
+                </div>
+
+                <div class="card fade-in">
+                    <div class="card-title">🛠️ Active Impact (Files)</div>
+                    <ul class="file-list" id="file-impact">
+                        <!-- Files -->
+                    </ul>
+                </div>
+
+                <div class="card fade-in">
+                    <div class="card-title">⚠️ Mistakes & Learnings</div>
+                    <div id="mistakes-log" style="font-size: 0.85rem; color: var(--warning);">
+                        <!-- Mistakes -->
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </div>
+
+    <!-- DATA INJECTION -->
+    <script id="dashboard-data" type="application/json">
+    {{DATA_JSON}}
+    </script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const rawData = document.getElementById('dashboard-data').textContent;
+            const data = JSON.parse(rawData);
+
+            initDashboard(data);
+        });
+
+        function initDashboard(data) {
+            // Objective
+            document.getElementById('objective-raw').innerText = data.state.objective;
+
+            // Header Meta
+            document.getElementById('meta-session').innerText = `SESSION: ${data.state.last_updated.split('T')[0]}`;
+
+            // Stats
+            const total = data.state.subtasks.length + data.state.completed_subtasks.length;
+            const completed = data.state.completed_subtasks.length;
+            const pct = total > 0 ? Math.round((completed / total) * 100) : 0;
+
+            document.getElementById('stat-progress').innerText = `${pct}%`;
+            document.getElementById('bar-progress').style.width = `${pct}%`;
+            document.getElementById('stat-cycles').innerText = data.timeline.length;
+            document.getElementById('stat-files').innerText = data.state.context.files.length;
+            document.getElementById('stat-depth').innerText = `${(JSON.stringify(data).length / 1024).toFixed(1)} KB`;
+
+            // Tasks
+            const taskStack = document.getElementById('task-stack');
+            data.state.completed_subtasks.forEach(t => {
+                taskStack.innerHTML += `<li><span class="check-icon">✓</span> ${t}</li>`;
+            });
+            if (data.state.current_subtask) {
+                taskStack.innerHTML += `<li class="active-item"><span class="active-icon">◎</span> <b>${data.state.current_subtask}</b></li>`;
+            }
+            data.state.subtasks.forEach(t => {
+                taskStack.innerHTML += `<li><span style="color: grey;">○</span> ${t}</li>`;
+            });
+
+            // Files
+            const fileImpact = document.getElementById('file-impact');
+            data.state.context.files.forEach(f => {
+                fileImpact.innerHTML += `<li><span>📄</span> ${f}</li>`;
+            });
+
+            // Timeline
+            const stream = document.getElementById('rarv-stream');
+            data.timeline.reverse().forEach((item, index) => {
+                const phaseClass = `pill-${item.phase.toLowerCase()}`;
+                const itemEl = document.createElement('div');
+                itemEl.className = 'timeline-item';
+                itemEl.setAttribute('data-phase', item.phase);
+                if (index === 0) itemEl.classList.add('active');
+
+                itemEl.innerHTML = `
+                    <div class="step-header">
+                        <div class="step-info">
+                            <span class="phase-pill ${phaseClass}">${item.phase}</span>
+                            <span style="font-size: 0.9rem; font-weight: 600;">${item.subtask || 'Orchestration'}</span>
+                        </div>
+                        <span class="step-time">${item.timestamp.split(' ')[1]}</span>
+                    </div>
+                    <div class="step-content ${index === 0 ? 'expanded' : ''}">
+                        <p>${item.reasoning}</p>
+                        ${item.tool ? `<div class="tool-call">λ Tool: ${item.tool}</div>` : ''}
+                    </div>
+                `;
+
+                itemEl.querySelector('.step-header').onclick = () => {
+                    itemEl.querySelector('.step-content').classList.toggle('expanded');
+                };
+
+                stream.appendChild(itemEl);
+            });
+
+            // Mistakes
+            const mistakeLog = document.getElementById('mistakes-log');
+            if (data.continuity && data.continuity.mistakes) {
+                data.continuity.mistakes.forEach(m => {
+                    mistakeLog.innerHTML += `<p style="margin-bottom: 8px;">◈ ${m}</p>`;
+                });
+            } else {
+                mistakeLog.innerHTML = '<p style="color: var(--text-dim);">No operational anomalies detected.</p>';
+            }
+
+            // Matrix Stats
+            const matrix = document.getElementById('session-matrix');
+            matrix.innerHTML = `
+                <div style="margin-bottom: 5px;">> TOTAL_TURNS: ${data.timeline.length}</div>
+                <div style="margin-bottom: 5px;">> MEMORY_STATE: STABLE</div>
+                <div style="margin-bottom: 5px;">> KERNEL_LOCK: ON</div>
+                <div style="margin-bottom: 5px;">> RARV_VERIFIED: TRUE</div>
+            `;
+
+            // Filtering
+            const filters = document.querySelectorAll('.filter-btn[data-filter]');
+            filters.forEach(btn => {
+                btn.onclick = () => {
+                    filters.forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
+                    const filter = btn.getAttribute('data-filter');
+                    document.querySelectorAll('.timeline-item').forEach(item => {
+                        if (filter === 'all' || item.getAttribute('data-phase') === filter) {
+                            item.style.display = 'block';
+                        } else {
+                            item.style.display = 'none';
+                        }
+                    });
+                };
+            });
+        }
+    </script>
+</body>
+
+</html>
