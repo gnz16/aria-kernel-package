@@ -1,0 +1,23 @@
+{
+    "name": "aria-bridge-mcp",
+    "version": "1.1.0",
+    "description": "MCP server exposing the ARIA Bridge as structured tools",
+    "type": "module",
+    "main": "server.js",
+    "scripts": {
+        "start": "node server.js",
+        "install-deps": "npm install"
+    },
+    "dependencies": {
+        "@modelcontextprotocol/sdk": "^1.0.0"
+    },
+    "engines": {
+        "node": ">=18.0.0"
+    },
+    "keywords": [
+        "aria",
+        "mcp",
+        "constellation-bridge"
+    ],
+    "license": "MIT"
+}
