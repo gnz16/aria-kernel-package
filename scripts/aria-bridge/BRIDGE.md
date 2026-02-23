@@ -1,161 +1,154 @@
-# ARIA Agent Bridge Protocol v2.0
-## Tri-Agent Resonance Hub
-
-**Location**: `/Users/apple/.gemini/antigravity/scratch/_scripts/aria-bridge/`
-
-Three agents share the **ARIA v7.7 kernel** and coordinate via this filesystem hub:
-
-| Agent ID | Tool | Strengths |
-|----------|------|-----------|
-| **gemini** | Antigravity IDE | Planning, file edits, UI, research, MCP config |
-| **claude** | Claude Code (PID 94992) | Security audits, testing, git ops, Loki autonomous tasks |
-| **opencode** | OpenCode (PID 91861) | Token optimization, refactoring, Desktop Commander MCP |
+# ARIA Constellation Bridge v2.0
+## Multi-Agent Orchestration Hub
 
 ---
 
-## 📁 Directory Structure
+## Agents
 
-```
-aria-bridge/
-├── BRIDGE.md                    ← This file (v2.0 protocol)
-├── join-bridge.sh               ← Agent startup script
-├── bridge-daemon.sh             ← Background watcher/router
-├── agents/
-│   ├── gemini/inbox.md          ← Tasks for Antigravity
-│   ├── gemini/outbox.md         ← Results from Antigravity
-│   ├── claude/inbox.md          ← Tasks for Claude Code
-│   ├── claude/outbox.md         ← Results from Claude Code
-│   ├── opencode/inbox.md        ← Tasks for OpenCode
-│   └── opencode/outbox.md       ← Results from OpenCode
-├── shared-context/
-│   ├── project-state.md         ← Full project state (source of truth)
-│   ├── context-hash.txt         ← SHA of last project-state.md per agent
-│   └── delta.md                 ← Only changes since last full read
-└── token-ledger/
-    ├── gemini.json              ← Per-agent token tracking
-    ├── claude.json
-    └── opencode.json
-```
+| Agent | Resonance | Role |
+|-------|-----------|------|
+| **Logician** | Apollo 100% | Architecture, schema, formal reasoning, type systems |
+| **Oracle** | Dionysus 80% + Apollo 20% | Brainstorming, research, lateral thinking, reframing |
+| **Auditor** | Hephaestus 70% + Athena 30% | Security audit, code review, vulnerability assessment |
+| **Craftsman** | Hephaestus 80% + Athena 20% | Implementation, testing, debugging, production code |
+| **Archivist** | Hephaestus 70% + Apollo 30% | Memory, context, documentation, shared-context maintenance |
 
 ---
 
-## 🔑 Token Deduplication Protocol (CRITICAL)
+## Task Routing
 
-**Before reading `project-state.md`, every agent MUST:**
-
-1. Read `shared-context/context-hash.txt`
-2. Compare the hash for your agent ID against your last-seen hash
-3. **If hash matches** → read `delta.md` only (saves ~80% tokens)
-4. **If hash differs** → read full `project-state.md`, update your hash entry
-
-```bash
-# Quick check (replace AGENT_ID with: gemini | claude | opencode)
-grep "AGENT_ID" shared-context/context-hash.txt
-```
+| Task Type | Agent |
+|-----------|-------|
+| System architecture, API design, schema | Logician |
+| Feature brainstorm, UX, problem reframing | Oracle |
+| Security audit, code review, risk assessment | Auditor |
+| Feature implementation, testing, debugging | Craftsman |
+| Documentation, memory compression, context sync | Archivist |
+| Multi-domain (complexity >7) | Decompose → parallel dispatch |
 
 ---
 
-## 📬 Message Format
-
-All `inbox.md` / `outbox.md` files use:
-
-```
----
-FROM: [gemini | claude | opencode]
-TO:   [gemini | claude | opencode]
-TASK_ID: [BRIDGE-XXX]
-PRIORITY: [HIGH | MEDIUM | LOW]
-STATUS: [PENDING | IN_PROGRESS | DONE | BLOCKED]
-TIMESTAMP: [ISO 8601]
-TOKENS_SAVED: [delta | full]   ← log which read mode was used
----
-
-## Task
-[Clear description]
-
-## Context
-[Relevant files, background — be minimal, reference project-state.md for shared context]
-
-## Expected Output
-[What to produce]
-
-## Handoff
-[What to write to outbox when done]
-```
-
----
-
-## 🔄 Workflow
-
-1. Any agent writes a task to the target agent's `agents/<target>/inbox.md`
-2. `bridge-daemon.sh` detects the new PENDING task and notifies (via log)
-3. Target agent reads inbox, sets STATUS=IN_PROGRESS, executes
-4. Target agent writes result to its own `agents/<target>/outbox.md` with STATUS=DONE
-5. Originating agent reads outbox, integrates result, updates `shared-context/project-state.md`
-6. After updating project-state.md, compute new SHA and update `context-hash.txt`
-
----
-
-## ⚡ Quick Start
-
-```bash
-# Join as any agent:
-bash join-bridge.sh --agent gemini
-bash join-bridge.sh --agent claude
-bash join-bridge.sh --agent opencode
-
-# Start background router:
-bash bridge-daemon.sh --start
-
-# Check token savings:
-python3 /Users/apple/.gemini/antigravity/scratch/_scripts/token-tracker.py --report
-```
-
----
-
-## 🧠 Agent Roles & Routing Matrix
-
-### Agent Specializations
-
-| Agent | Primary Role | Core Strengths | Avoid |
-|-------|-------------|----------------|-------|
-| **gemini** (Antigravity) | 🔍 Research + Planning | Web search, implementation plans, MCP config, file edits, UI | Heavy code execution, long autonomous runs |
-| **opencode** | 🗜️ Context Compression | Delta reads, token ledger, summarization, context trimming | Security audits, intensive coding |
-| **claude** (Claude Code) | ⚙️ Heavy Execution | Intensive coding, security audits, git ops, testing, Loki Mode | Research, planning |
-
-### Task Routing Rules
-
-| Task Type | Send To | Reason |
-|-----------|---------|--------|
-| Web research, documentation lookup | **gemini** | Built-in search tools |
-| Implementation plan creation | **gemini** | IDE integration, planning strength |
-| MCP configuration | **gemini** | Direct config file access |
-| Context summarization / compression | **opencode** | Proven 54% token savings via delta reads |
-| Token ledger updates | **opencode** | Owns the token tracking pipeline |
-| Shrinking project-state.md | **opencode** | Context compression specialty |
-| Feature implementation | **claude** | Most capable for intensive autonomous work |
-| Security audits | **claude** | Hephaestus+Athena blend, audit expertise |
-| Git operations, testing | **claude** | CLI-native, Loki Mode for parallel tasks |
-| Refactoring large codebases | **claude** | Long-running autonomous execution |
-
-### Delegation Flow
+## Workflow
 
 ```
 User Request
     │
     ▼
-gemini (Antigravity)
-    │ researches + plans
-    │ writes implementation plan
+Conductor (you, main Claude session)
+    │ decompose task by domain
     │
-    ├──► opencode: "Compress context, update delta.md"
-    │         (before any heavy task to save tokens)
+    ├──► Archivist: "Compress context, update delta.md" (optional, before heavy tasks)
     │
-    └──► claude: "Execute plan [BRIDGE-XXX]"
-              (reads compressed context from opencode)
-              (writes results back to outbox)
+    ├──► Logician: architecture subtask
+    ├──► Oracle: brainstorm subtask        } parallel when independent
+    ├──► Craftsman: implementation subtask }
+    │
+    ▼
+Collect outboxes → integrate → sync shared-context → DONE
 ```
 
 ---
 
-*Bridge v2.0 — ARIA v7.7 Constellation Phase — Established 2026-02-18*
+## Commands
+
+```bash
+# Check status of all agents
+bash /root/.aria-bridge/aria-status.sh
+
+# Spawn an agent in tmux
+bash /root/.aria-bridge/aria-spawn.sh <agent>
+# agents: logician | oracle | auditor | craftsman | archivist
+
+# Assign a task
+bash /root/.aria-bridge/aria-assign.sh <agent> <TASK-ID> <PRIORITY> <task.md>
+# priority: HIGH | MEDIUM | LOW
+
+# Collect results from outboxes
+bash /root/.aria-bridge/aria-collect.sh [agent]
+
+# Sync shared context after results integrated
+bash /root/.aria-bridge/aria-sync.sh "what changed"
+```
+
+---
+
+## Directory Structure
+
+```
+/root/.aria-bridge/
+├── BRIDGE.md                        ← This file
+├── aria-spawn.sh                    ← Spawn agent in tmux (claude CLI)
+├── aria-assign.sh                   ← Write task to agent inbox
+├── aria-status.sh                   ← Status dashboard
+├── aria-collect.sh                  ← Collect outbox results + feed Archivist
+├── aria-sync.sh                     ← Sync shared context + hash
+├── watch-bridge.sh                  ← Live dashboard (watch -n 2)
+├── evolution-log.md                 ← Versioned system change log
+├── hooks/
+│   ├── session-start.sh             ← Startup guard: re-clone skills if missing
+│   ├── post-session.sh              ← Memory check + compression reminder
+│   ├── rotate-log.sh                ← Append timestamped entry to evolution log
+│   └── init-memory-git.sh           ← One-time: init git versioning on memory/
+├── agent-kernels/
+│   ├── logician.md                  ← Role CLAUDE.md for Logician
+│   ├── oracle.md                    ← Role CLAUDE.md for Oracle
+│   ├── auditor.md                   ← Role CLAUDE.md for Auditor
+│   ├── craftsman.md                 ← Role CLAUDE.md for Craftsman
+│   └── archivist.md                 ← Role CLAUDE.md for Archivist
+├── agents/
+│   ├── logician/{inbox.md,outbox.md}
+│   ├── oracle/{inbox.md,outbox.md}
+│   ├── auditor/{inbox.md,outbox.md}
+│   ├── craftsman/{inbox.md,outbox.md}
+│   └── archivist/{inbox.md,outbox.md}
+└── shared-context/
+    ├── project-state.md             ← Source of truth
+    ├── delta.md                     ← Changes since last full read
+    └── context-hash.txt             ← Per-agent staleness tracking
+```
+
+---
+
+## Message Format (inbox/outbox)
+
+```markdown
+---
+FROM: conductor
+TO: craftsman
+TASK_ID: BRIDGE-C001
+PRIORITY: HIGH
+STATUS: PENDING
+TIMESTAMP: 2026-02-19T00:00:00Z
+CONTEXT_HASH: <sha256>
+---
+
+## Task
+[Clear, specific description]
+
+## Context
+Read delta.md first. Key files: [list only what's needed]
+
+## Expected Output
+[What to produce]
+
+## Handoff
+Write result to: /root/.aria-bridge/agents/craftsman/outbox.md
+```
+
+---
+
+## Task ID Convention
+
+| Prefix | Agent | Example |
+|--------|-------|---------|
+| BRIDGE-L | Logician | BRIDGE-L001 |
+| BRIDGE-O | Oracle | BRIDGE-O001 |
+| BRIDGE-A | Auditor | BRIDGE-A001 |
+| BRIDGE-C | Craftsman | BRIDGE-C001 |
+| BRIDGE-R | Archivist | BRIDGE-R001 |
+| BRIDGE- | Cross-agent | BRIDGE-001 |
+
+---
+
+*ARIA Constellation Bridge v2.0 — Adapted from gnz16/aria-kernel-package*
+*Established: 2026-02-19*
