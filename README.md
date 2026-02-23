@@ -1,6 +1,6 @@
-# ARIA Kernel Package v7.5
+# ARIA Kernel Package v7.8
 
-> *Adaptive Resonance Intelligence Architecture — The Resonant Mind*
+> *Adaptive Resonance Intelligence Architecture — The Resonant Detective*
 
 Complete portable package of the ARIA cognitive kernel, skills, scripts, and workflows for multi-agent collaboration.
 
