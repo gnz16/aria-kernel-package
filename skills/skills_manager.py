@@ -13,7 +13,7 @@ from typing import Dict, List, Optional
 from datetime import datetime
 
 class SkillsManager:
-    def __init__(self, skills_dir: str = "/Users/apple/.gemini/skills"):
+    def __init__(self, skills_dir: str = "/app/skills"):
         self.skills_dir = Path(skills_dir)
         self.registry_file = self.skills_dir / "registry.json"
         self.index_file = self.skills_dir / "skills_index.json"
@@ -204,7 +204,7 @@ class SkillsManager:
         """Create a backup of the skills directory"""
         if not backup_path:
             timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-            backup_path = f"/Users/apple/.gemini/skills_backup_{timestamp}"
+            backup_path = f"/app/skills_backup_{timestamp}"
             
         backup_dir = Path(backup_path)
         
